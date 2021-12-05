@@ -19,6 +19,12 @@ function buildTable(data) {
             }
         );
     });
+}
 
-
+// create function to handle button click
+function handleClick() {
+    // set variable for date searching by datetime tag
+    let date = d3.select("#datetime").property("value");
+    // set var for default filter equal to original table data
+    let filteredData = tableData;
 }
