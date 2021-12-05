@@ -27,4 +27,16 @@ function handleClick() {
     let date = d3.select("#datetime").property("value");
     // set var for default filter equal to original table data
     let filteredData = tableData;
+    // add if statement to check for filtered date
+    if (date) {
+        filteredData = filteredData = filteredData.filter(row => row.datetime === date);
+    }
+    // rebuild table using filteredData, if no filter return original tableData
+    buildTable(filteredData);
 }
+
+// listen for buttonclick event on filter-btn --> on click activate handleClick fxn
+d3.selectAll("#filter-btn").on("click",handleClick);
+
+// load original table when page loads
+buildTable(tableData); 
