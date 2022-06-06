@@ -1,10 +1,8 @@
 # UFOs
 ## **Project Overview**
----
 The purpose of this project is to extract UFO sighting data from a JavaScript array and display filtered results in a webpage table using HTML.
 
 ## **Results**
----
 
 ### *The Homepage*
 
